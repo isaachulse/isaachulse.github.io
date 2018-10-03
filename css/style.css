@@ -14,3 +14,13 @@ canvas {
   align-items: center;
   justify-content: center;
 }
+
+p {
+  font-size: 55px; 
+  color: #FFFFFF; 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  transform: skewX(169deg); 
+  -webkit-transform: skewX(169deg); 
+  -moz-transform: skewX(169deg); 
+  -o-transform: skewX(169deg); 
+}
