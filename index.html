@@ -15,8 +15,32 @@
 <body>
 
 <div class="container">
-  <div><p>im hungry u have snacks?</p></div>
-</div>
+<ul class="animal-kill-counter">
+    <h1></h1>
+    <li><span id="chickens">0</span> chickens</li>
+    </h1>
+</ul>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var updatesPerSecond = 20;
+        var secondsPerYear = 365 * 24 * 60 * 60;
+        var interval = 1000 / updatesPerSecond;
+        var count = 0;
+        var start = new Date().getTime()
+
+        function update(intervalCount) {
+            var numKilled = 61171973510;
+            var countElement = document.getElementById("chickens");
+            countElement.innerHTML = Math.round(intervalCount * (numKilled / secondsPerYear) / updatesPerSecond).toLocaleString();
+        }
+
+        function selfCorrectingTimeoutInterval() {
+            update(++count);
+            window.setTimeout(selfCorrectingTimeoutInterval, interval - (new Date().getTime() - start - count * interval));
+        }
+        window.setTimeout(selfCorrectingTimeoutInterval, interval);
+    });
+</script></div>
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js"></script>
 <body></body>
