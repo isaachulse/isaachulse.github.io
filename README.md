@@ -27,7 +27,7 @@ $ bundle install
 1. Run Jekyll Serve:
 
 ``` shell
-bundle exec jekyll serve
+$ bundle exec jekyll serve
 ```
 
 2. Open in browser:
