@@ -24,13 +24,13 @@ $ bundle install
 
 ### To serve
 
-1. Run Jekyll Serve
+1. Run Jekyll Serve:
 
 ``` shell
 bundle exec jekyll serve
 ```
 
-2. Open in browser
+2. Open in browser:
 
 ```
 http://localhost:4000
