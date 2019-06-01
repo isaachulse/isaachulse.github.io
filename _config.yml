@@ -1,0 +1,24 @@
+# Site settings
+title: * hello all
+email: ihulse@pm.me
+description: isaachulse.github.io
+baseurl: 
+url:  https://isaachulse.github.io
+github_username:  isaachulse
+
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# Pagination
+paginate: 15
+paginate_path: "/home/page:num/"
+
+collections:
+  portfolio:
+    output: true
+    permalink: /portfolio/:path/
+
+
+
