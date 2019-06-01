@@ -1,8 +1,8 @@
 # isaachulse.github.io
 
-## To Run Locally
+## Running locally...
 
-### Preerequisites
+### Prerequisites
 
 1. Ensure you have Ruby 2.1.0 or higher installed:
 
@@ -22,7 +22,7 @@ $ gem install bundler
 $ bundle install
 ```
 
-### To serve site
+### To serve
 
 1. Run Jekyll Serve
 
