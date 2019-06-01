@@ -1,10 +1,10 @@
 # Site settings
-title: * hello all
+title: hello
 email: ihulse@pm.me
 description: isaachulse.github.io
-baseurl: 
-url:  https://isaachulse.github.io
-github_username:  isaachulse
+baseurl: /
+url: https://isaachulse.github.io
+github_username: isaachulse
 
 # Build settings
 markdown: kramdown
