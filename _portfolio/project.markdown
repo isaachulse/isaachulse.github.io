@@ -1,8 +1,10 @@
 ---
 layout: post
-title: project
-description: one of my lil projects
-img: /img/1.jpg
+title: bpm-tap
+description: simple bpm tapper website
+img: /img/bpmtap.jpg
 ---
 
-test project
+Über simple website demonstrating BPM Tapper
+
+_Visit it [here](https://isaachulse.github.io/bpm-tap), no description or anything so just tap away to get started!_
