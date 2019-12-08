@@ -8,3 +8,5 @@ img: /img/bpmtap.jpg
 Über simple website demonstrating BPM Tapper
 
 _Visit it [here](https://isaachulse.github.io/bpm-tap), no description or anything so just tap away to get started!_
+
+(pressing space works pretty well)
