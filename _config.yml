@@ -1,5 +1,5 @@
 # Site settings
-title: hello
+title: Hey, I'm Isaac!
 email: ihulse@pm.me
 description: isaachulse.github.io
 baseurl: /
@@ -19,6 +19,3 @@ collections:
   portfolio:
     output: true
     permalink: /portfolio/:path/
-
-
-
