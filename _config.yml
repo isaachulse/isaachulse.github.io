@@ -1,8 +1,8 @@
 # Site setings
-name: 'Aryn'
-description: 'vancouver/writer'
+name: 'Isaac'
+description: 'software developer'
 # Sidebar about text
-site_description: 'vancouver/writer'
+site_description: 'software developer'
 logo:
 favicon: 'assets/images/favicon.ico'
 baseurl:
@@ -18,29 +18,20 @@ contact_page_description: "Forma theme comes with a contact form built-in. You c
 thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
 # Social links
-twitter:
-facebook: 'aryn.davidson.1'
-github:
-codepen:
-dribbble:
+github: isaachulse
 medium:
-instagram:
-pinterest:
-linkedin:
+linkedin: isaachulse
 
 # Navigation
 navigation:
   - text: About
     url: /about/
-  - text: Style Guide
-    url: /style-guide/
   - text: Contact
     url: /contact/
 
 # Required Plugins
 plugins_dir:
   - jekyll-paginate
-  - jekyll-tagsgenerator
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-author-page

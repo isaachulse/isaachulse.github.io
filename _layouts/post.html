@@ -88,46 +88,6 @@ post_class: post-template
             {% endif %}
             {% endfor %}
         </article>
-        {% if site.mailchimp_url %}
-            {% include newsletter-box.html %}
-        {% endif %}
-        <nav class="navigation post-navigation">
-            <h2 class="screen-reader-text">Post navigation</h2>
-            <div class="nav-links">
-            {% if page.previous.url %}
-            <div class="nav-previous">
-                <a href="{{ site.baseurl }}{{page.previous.url}}" class="nav-inside">
-                    <span class="nav-before">Previous post</span>
-                    <span class="nav-title">{{page.previous.title}}</span>
-                    <span class="nav-meta">{{page.previous.date
-                    | date: "%B %-d, %Y"}}</span>
-                    {% if page.previous.featured_image_thumbnail %}
-                        <span class="nav-thumb" style="background-image: url({{ page.previous.featured_image_thumbnail }})"></span>
-                    {% elsif page.previous.featured_image %}
-                        <span class="nav-thumb" style="background-image: url({{ page.previous.featured_image }})"></span>
-                    {% else %}
-                    {% endif %}
-                </a>
-            </div>
-            {% endif %}
-            {% if page.next.url %}
-            <div class="nav-next">
-                <a href="{{ site.baseurl }}{{page.next.url}}" class="nav-inside">
-                    <span class="nav-before">Next post</span>
-                    <span class="nav-title">{{page.next.title}}</span>
-                    <span class="nav-meta">{{page.next.date
-                                    | date: "%B %-d, %Y"}}</span>
-                    {% if page.next.featured_image_thumbnail %}
-                        <span class="nav-thumb" style="background-image: url({{ page.next.featured_image_thumbnail }})"></span>
-                    {% elsif page.next.featured_image %}
-                        <span class="nav-thumb" style="background-image: url({{ page.next.featured_image }})"></span>
-                    {% else %}
-                    {% endif %}
-                </a>
-            </div>
-            {% endif %}
-            </div><!-- .nav-links -->
-        </nav><!-- .post-navigation -->
-        {% include disqus.html %}
+
     </main><!-- .site-main -->
 </div><!-- .site-content -->
