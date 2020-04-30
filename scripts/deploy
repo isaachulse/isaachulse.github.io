@@ -1,0 +1,21 @@
+
+#!/bin/bash
+set -x
+
+# SSH creds
+SSH_USER="aryn"
+SSH_HOST="aryn.ca"
+
+# Add git remote
+REMOTE_GIT_PATH="~/www"
+git remote add deploy "${SSH_USER}@${SSH_HOST}:${REMOTE_GIT_PATH}"
+
+# Configure git meta
+git config user.name "Aryn"
+git config user.email "hey@aryn.ca"
+
+# Stage, commit, and then push to production server
+git add .
+git commit -m "Deploy"
+git push --force deploy $TRAVIS_BRANCH
+

@@ -1,7 +1,12 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-  	<p>Site built using <a href="http://jekyllrb.com" target="_blank">Jekyll</a> , kindly hosted by <a href="https://github.com" target="_blank">Github</a>. See source code <a href="https://github.com/isaachulse/isaachulse.github.io" target="_blank">here</a></p>
-  </div>
-
-</footer>
+<footer id="colophon" class="site-footer outer">
+    <div class="inner">
+        <div class="footer-bottom">
+            {% include social-links.html %}
+            <p class="site-info">
+                <a href="#">{{ site.name }}</a> &copy; {{ site.time | date: '%Y' }}
+                <br /> Powered by <a target="_blank" href="https://jekyllrb.com/">Jekyll</a>.
+            </p>
+            <a href="#page" id="top-link" class="top-link"><i class="fa-arrow-left-custom" aria-hidden="true"></i> <span class="top-link-text">Up</span></a>
+        </div><!-- .footer-bottom -->
+    </div><!-- .inner -->
+</footer><!-- .site-footer -->

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -x
+
+rm -f ./deploy_key.enc
+yes | travis encrypt-file ./deploy_key --add --force

@@ -1,21 +1,61 @@
-# Site settings
-title: Hey, I'm Isaac!
-email: ihulse@pm.me
-description: isaachulse.github.io
-baseurl: /
-url: https://isaachulse.github.io
-github_username: isaachulse
+# Site setings
+name: 'Aryn'
+description: 'vancouver/writer'
+# Sidebar about text
+site_description: 'vancouver/writer'
+logo:
+favicon: 'assets/images/favicon.ico'
+baseurl:
+production_url: https://aryn.ca
+disqus: ''
+mailchimp_url: ''
+# Add your GA Tracking Id
+ga_analytics:
 
-# Build settings
-markdown: kramdown
+# Contact form setings
+email: hey@aryn.ca
+contact_page_description: "Forma theme comes with a contact form built-in. You can use this form with Formspree service and get up to 50 submissions for free. Also, you can easily switch to another service if you want."
+thankyou_page_description: "Your message has been successfully sent. We will contact you very soon!"
 
-highlighter: rouge
+# Social links
+twitter:
+facebook: 'aryn.davidson.1'
+github:
+codepen:
+dribbble:
+medium:
+instagram:
+pinterest:
+linkedin:
+
+# Navigation
+navigation:
+  - text: About
+    url: /about/
+  - text: Style Guide
+    url: /style-guide/
+  - text: Contact
+    url: /contact/
+
+# Required Plugins
+plugins_dir:
+  - jekyll-paginate
+  - jekyll-tagsgenerator
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-author-page
 
 # Pagination
-paginate: 15
-paginate_path: "/home/page:num/"
+paginate: 6
+paginate_path: /page:num/
 
-collections:
-  portfolio:
-    output: true
-    permalink: /portfolio/:path/
+# Permalinks
+permalink: /:title
+
+# Other
+markdown: kramdown
+
+# Sass
+sass:
+  sass_dir: _sass
+  style: compressed

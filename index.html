@@ -1,24 +1,21 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="header-bar">
-  <h1>hello</h1>
-  <h2>i'm isaac</h2>
-  <br/>
-  <hr>
-  <br/>
+<div id="content" class="site-content">
+    <main id="main" class="site-main inner">
+        <div id="post-wrapper" class="post-wrapper">
+            {% for post in paginator.posts %}
+                {% include postbox.html %}
+            {% endfor %}
+        </div><!-- .post-wrapper -->
+        <!-- Pagination-->
+        {% include pagination.html %}
+    </main>
 </div>
 
 
-<ul class="post-list">
-    {% for post in paginator.posts %}
-      <li>
-        <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-        <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }}</p>
-        <p>{{ post.description }}</p>
-        <br/>
-        <hr/>
-      </li>
-    {% endfor %}
-</ul>
+
+
+
