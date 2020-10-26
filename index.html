@@ -9,29 +9,25 @@
     <!-- <script type="text/javascript" src="lib/script.js"></script>   -->
     <!-- <script type="text/javascript" src="lib/typed.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
+  <script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings'
+  });
+</script>
     <title>Isaac Hulse</title>
 
 </head>
 
 <body>
-  <script>
-    import Typed from 'typed.js';
 
-var options = {
-  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-  typeSpeed: 40
-};
-
-var typed = new Typed('.element', options);
-  </script>
     <header>
         <div class="contain">
             <h1>I'm Isaac Hulse.</h1>
             <div id="typed-strings">
-              <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-              <p>It <em>types</em> out sentences.</p>
-            </div>
+  <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+  <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
             <span id="typed"></span>
             <ul class="sm-link">
                 <li><a href="https://blog.isaac.hulse.wtf" rel="me" title="Read Isaac Hulse's blog." class="bl">Blog</a></li>
