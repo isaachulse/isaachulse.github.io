@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Isaac Hulse is a description..." />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <!-- <script type="text/javascript" src="lib/script.js"></script>   -->
-    <!-- <script type="text/javascript" src="lib/typed.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Isaac Hulse is a description..." />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script type="text/javascript" src="lib/typed.js"></script>
+		<script>
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings'
   });
 </script>
-    <title>Isaac Hulse</title>
-
-</head>
-
-<body>
-
-    <header>
-        <div class="contain">
-            <h1>I'm Isaac Hulse.</h1>
-            <div id="typed-strings">
-  <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-  <p>It <em>types</em> out sentences.</p>
-</div>
-<span id="typed"></span>
-            <span id="typed"></span>
-            <ul class="sm-link">
-                <li><a href="https://blog.isaac.hulse.wtf" rel="me" title="Read Isaac Hulse's blog." class="bl">Blog</a></li>
-                <li><a href="https://github.com/isaachulse" rel="me" title="Follow Isaac Hulse on Github" class="gh">GitHub</a></li>
-                <li><a href="https://linkedin.com/in/isaachulse" rel="me" title="Connect with Cody Ogden on LinkedIn" class="li">LinkedIn</a></li>
-            </ul>
-        </div>
-    </header>
-    <footer>
-    </footer>
-</body>
-
+		<title>Isaac Hulse</title>
+	</head>
+	<body>
+		<header>
+			<div class="contain">
+				<img src="img/ih.jpg" alt="Black and White portrait style headshot. " width="100" height="100" class="img" />
+				<h1>I'm Isaac Hulse.</h1>
+				<div id="typed-strings" class="string">
+					<p>Software Engineer</p>
+					<p>Freestyle Skiier</p>
+					<p>IoT Experimenter</p>
+					<p>Environmental Activist</p>
+				</div>
+				<span id="typed" class="typed"></span>
+				<script>
+                var typed = new Typed('#typed', {
+                    stringsElement: '#typed-strings',
+                    typeSpeed: 50,
+                    backSpeed: 100,
+                    loop   : true
+                });
+            </script>
+				<ul class="link">
+					<li>
+						<a href="https://blog.isaac.hulse.wtf" rel="me" title="Read Isaac Hulse's blog." class="bl">Blog</a>
+					</li>
+					<li>
+						<a href="https://github.com/isaachulse" rel="me" title="Follow Isaac Hulse on Github" class="gh">GitHub</a>
+					</li>
+					<li>
+						<a href="https://linkedin.com/in/isaachulse" rel="me" title="Connect with Cody Ogden on LinkedIn" class="li">LinkedIn</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<footer></footer>
+	</body>
 </html>
